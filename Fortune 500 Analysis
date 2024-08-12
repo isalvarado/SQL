@@ -68,7 +68,10 @@ AND healthcare_benefits=1
 ;
 # Which companies have an average employee tenure of 5 years or greater?
 SELECT company_name,
-CASE WHEN SUM(avg_employee_tenure) > 5 THEN 1 ELSE 0 END "flag"
+CASE WHEN SUM(avg_employee_tenure) > 5 
+THEN 1 
+ELSE 0 
+END "flag"
 FROM fortune_companies
 ;
 # Which company in the Technology industry has the least revenue, and what's their revenue?
